@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+            }
+            header{
+                background-image: url("Imagenes/galaxia1.jpg");
+                background-size: cover;
+                padding: 20px;
+                /*background: linear-gradient(to right, #00FFeD,#9D00CE);*/
+            }
+            table,td{
+                border: 2px inset darkviolet;
+                text-align: left;
+                margin: 10px;
+            }
+            td{
+                background-color: transparent;
+                padding: 10px;
+                padding-left: 28px;
+                padding-right: 28px;
+                border-radius: 10px;
+                border: 1px solid transparent;
+            }
+            #titulo{
+                text-align: center;
+            }
+            body{
+                /*background: rgb(238,174,202);*/
+                /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+                background: linear-gradient(to right bottom,#0100ec,#FB36F4);
+                color: white;
+                min-height: 100vh;
+            }
+
+            /*todos los enlaces deben estar en negrita subrayado y tipo de letra diferente al contenido*/
+            a{
+                color: #510485;
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(81, 49, 102);
+            }
+            .enlace:hover{
+                border: 1px solid rgba(255,255,255,.5);
+                background-color: rgba(255,255,255,1);
+                font-size: 1.25rem;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(6px);
+                cursor: pointer;
+                transition: .8s;
+                transform: scale(1.5);
+            }
+            .enlace:hover{
+                background-color: transparent;
+                /*filter: blur(10px);*/
+            }
+            #tri{
+                align-content:"right";
+            }
+            .triforce{
+                margin: 50px;
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 1100px;
+                width: 0px;
+                height: 0px;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-bottom: 74px solid #ffbc00;
+            }
+            .triforce::before{
+                content: "";
+                position: absolute;
+                display: block;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-bottom: 74px solid #ffbc00;
+                top: 74px;
+                left: -80px;
+            }
+            .triforce::after{
+                content: "";
+                position: absolute;
+                display: block;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-bottom: 74px solid #ffbc00;
+                top: 74px;
+            }
+            #TablaCenter{
+                position: relative;
+                left: 350px;
+                max-width: 100vh;
+            }
+            .TablaABC{
+                background: linear-gradient(to left top,#8b0187,#926991,#4545fd);
+                box-shadow: 5px 10px 30px darkgoldenrod;
+            }
+            footer{
+                background-color: rgb(85, 51, 84);
+                position: absolute;
+                bottom: 0;
+                width: 100%;    
+            }
+            .copyright{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="titulo">DICCIONARIO.COM</h1>
+            <div class="triforce" id="tri"></div>
+        </header>
+        <section>
+            <h3>Bienvenidos al sitio de las mejores definiciones de America<h3>
+            <section id="TablaCenter">
+                <table class="TablaABC">
+                    <tr>
+                        <td class="enlace"><a href="Letra_A.html">A</a></td>
+                        <td>B</td>
+                        <td class="enlace"><a href="Letra_C.html">C</a></td>
+                        <td>D</td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td class="enlace"><a href="Letra_F.html">F</a></td>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                        <td>J</td>
+                    </tr>
+                    <tr>
+                        <td>K</td>
+                        <td>L</td>
+                        <td class="enlace"><a href="Letra_M.html">M</a></td>
+                        <td>N</td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <td>P</td>
+                        <td>Q</td>
+                        <td>R</td>
+                        <td>S</td>
+                        <td class="enlace"><a href="Letra_T.html">T</a></td>
+                    </tr>
+                    <tr>
+                        <td>U</td>
+                        <td>V</td>
+                        <td>W</td>
+                        <td>X</td>
+                        <td>Y</td>
+                    </tr>
+                </table>
+            </section>
+            <h2>Integrantes:</h2>
+            <h3>Luis Márquez <br> Manuel Castro</h3>
+        </section>
+        <footer>
+            <br>
+            <div class="copyright">
+                <b>Desarrollado por</b> <br>Luis A. Márquez & Manuel A. Castro | 1SF121
+                 | Mayo 2022 <br>All Rights Reserved.
+            </div>
+            <br>
+        </footer>
+    </body>
+</html>
